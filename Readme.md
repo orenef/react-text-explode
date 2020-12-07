@@ -2,10 +2,10 @@
 
 react-text-explode is a react base component with zero dependencies, use to add the exploding effect.
 
-codesandbox demo -> [Demo]()
+codesandbox demo -> [Demo](https://codesandbox.io/s/pedantic-zhukovsky-zkyds?file=/public/index.html)
 ## Installation
 
-Use the package manager [npm]() to install .
+Use the package manager [npm](https://www.npmjs.com/package/react-text-explode) to install .
 
 ```bash
 npm install react-text-explode
