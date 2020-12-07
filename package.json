@@ -1,7 +1,7 @@
 {
-  "name": "react-typescript-rollup-parcel-template",
+  "name": "react-text-explode",
   "version": "1.0.0",
-  "description": "Base template",
+  "description": "React base component with zero dependencies, use to add the exploding effect",
   "homepage": "https://github.com/orenef/react-text-explode",
   "keywords": ["react","text","effect"],
   "main": "build/index.js",
