@@ -1,6 +1,6 @@
 # react-text-explode
 
-[] react-text-explode is a react base component with zero dependencies, use to add the exploding effect.
+react-text-explode is a react base component with zero dependencies, use to add the exploding effect.
 
 codesandbox demo -> [Demo]()
 ## Installation
