@@ -5,11 +5,13 @@ interface Props {
   text?: string;
   trigger?: string;
   initialFontSize?: string;
+  timerMs?: number | undefined;
 }
 export const TextExplode: React.FC<Props> = ({
   text = 'Are you ready ?',
   trigger = "mouseover",
-  initialFontSize = '12px'
+  initialFontSize = '12px',
+  timerMs = undefined
 }) => {
   const elRef =  React.useRef(null);
   let STOP = false; // limit the effect, once per render
@@ -24,8 +26,8 @@ export const TextExplode: React.FC<Props> = ({
       STOP = true;
       const lettersSpan = [...(elRef?.current as any).childNodes];
       lettersSpan.forEach((span, index) => {
-        const newTop = Math.floor(Math.random()*500)*((index%2)?1:-1);
-        const newLeft = Math.floor(Math.random()*500)*((index%2)?1:-1);
+        const newTop = Math.floor(Math.random()*250)*((index%2)?1:-1);
+        const newLeft = Math.floor(Math.random()*250)*((index%2)?1:-1);
         const duration = Math.floor(Math.random()*2500);
         span.animate([
           {
@@ -50,6 +52,13 @@ export const TextExplode: React.FC<Props> = ({
       });
     }
   }
+  React.useEffect(() => {
+	if (timerMs) {
+		setTimeout(() => {
+			onTrigger({ type: trigger });
+		  }, timerMs);
+	}
+	},[]);
   return (
     <div ref={elRef} onMouseOver={onTrigger} onClick={onTrigger}>
       {text.split('').map((c, index) => <span key={`${index}-${c}`}>{c}</span>)}

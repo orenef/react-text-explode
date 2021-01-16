@@ -34,7 +34,7 @@ props| default value| type | info
 text | `Loading` | string | the text you want to apply the effect on.
 trigger | `mouseover` | string | event to trigger the effect ( `mouseover` or `click` ).
 initialFontSize | `12px` | string | text font size before effect apply.
-
+timerMs | `undefined` | number Or undefined | active auto trigger when timer end
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 

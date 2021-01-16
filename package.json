@@ -1,6 +1,6 @@
 {
   "name": "react-text-explode",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "React base component with zero dependencies, use to add the exploding effect",
   "homepage": "https://github.com/orenef/react-text-explode",
   "keywords": ["react","text","effect"],
